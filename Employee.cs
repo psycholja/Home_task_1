@@ -11,6 +11,9 @@ namespace ConsoleApp_Employee
         public int exp;
         public int qual;
         public int bonus;
+
+        public Employee(string a, string b, int c, int d) {name1=a;name2=b;exp=c;qual=d;}
+
         public void GetInfo()
         {
             Console.WriteLine($"Имя: {name1}\nФамилия: {name2}\nСтаж:{exp}\nКвалификация:{qual}");

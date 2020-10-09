@@ -6,19 +6,25 @@ namespace ConsoleApp_Employee
     {
         static void Main(string[] args)
         {
-            Employee myEmployee = new Employee();
-            myEmployee.exp=3;
-            myEmployee.qual=4;
-            myEmployee.name1="Том";
-            myEmployee.name2="Иванов";
-            
-           
+            Employee myEmployee = new Employee("","",0,0);
 
-
-            Console.WriteLine($"Имя: {myEmployee.name1} \nФамилия: {myEmployee.name2} \nСтаж:{myEmployee.exp} (лет) \nКвалификация:{myEmployee.qual} (1-5)");
+            myEmployee.GetInfo();
             Console.WriteLine(value: $"Бонус: {myEmployee.GetBonusPercent()} %");
 
-            Console.ReadKey();
+            Employee Tom = new Employee("Том","Иванов",6,4);
+
+            Tom.GetInfo();
+            Console.WriteLine(value: $"Бонус: {Tom.GetBonusPercent()} %");
+
+            Employee Juan = new Employee("Хуан","Петров",10,5);
+
+            Juan.GetInfo();
+            Console.WriteLine(value: $"Бонус: {Juan.GetBonusPercent()} %");
+
+            Employee Helen = new Employee("Хелена","Дудочник",0,1);
+
+            Helen.GetInfo();
+            Console.WriteLine(value: $"Бонус: {Helen.GetBonusPercent()} %");
         }
     }
 }

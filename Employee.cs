@@ -28,9 +28,13 @@ namespace ConsoleApp_Employee
                     bonus = 5;
                 }
                 
-                if ((exp>=5)&&(qual<3))
+                if ((exp>=5)&&(qual<3)) 
                 {
                     bonus=10;
+                }
+                if ((exp>5)&&(qual>=3)&&(qual<=4)) 
+                {
+                    bonus=15;
                 }
                 if ((exp>5)&&(qual==5))
                 {

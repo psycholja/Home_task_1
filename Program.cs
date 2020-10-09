@@ -7,8 +7,8 @@ namespace ConsoleApp_Employee
         static void Main(string[] args)
         {
             Employee myEmployee = new Employee();
-            myEmployee.exp=10;
-            myEmployee.qual=5;
+            myEmployee.exp=3;
+            myEmployee.qual=4;
             myEmployee.name1="Том";
             myEmployee.name2="Иванов";
             
